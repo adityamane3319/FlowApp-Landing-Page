@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowApp Landing-Page</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body
+    class="h-screen bg-[linear-gradient(#111_1px,transparent_1px),linear-gradient(to_right,#111_1px,transparent_1px)] bg-size-[40px_40px] bg-black my-3 mx-5 md:my-2 md:mx-3">
+
+    <nav
+        class="bg-white/10 backdrop-blur-lg border justify-between items-center fixed top-0 left-0 w-full z-50 flex border-white/20 rounded-lg p-2">
+        <div class="flex gap-1 ml-5 items-center text-white font-bold">
+            <div class="h-6 w-auto bg-linear-to-l from-blue-500 to-purple-500 rounded-lg my-2">⚡
+            </div>
+            <h1>FlowApp</h1>
+        </div>
+
+        <ul class="hidden md:flex gap-2 items-center text-white">
+            <li><a href="#" class="hover:bg-gray-400 p-2 rounded-lg transition">Features</a></li>
+            <li><a href="#" class="hover:bg-gray-400 p-2 rounded-lg transition">Pricing</a></li>
+            <li><a href="#" class="hover:bg-gray-400 p-2 rounded-lg transition">Review</a></li>
+            <li
+                class="inline-block p-0.5 rounded-lg bg-linear-to-r from-blue-500 to-purple-500 hover:scale-110 transition">
+                <button type="button" class="bg-black text-white px-4 py-2 rounded-lg">
+                    Get Started
+                </button>
+            </li>
+        </ul>
+
+        <button type="button" id="menu-btn" class="md:hidden text-3xl">
+            ☰
+        </button>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden px-6 py-5">
+
+        <ul class="flex flex-col gap-4 text-white">
+            <li><a href="#" class="hover:bg-gray-400 p-2 rounded-lg">Features</a></li>
+            <li><a href="#" class="hover:bg-gray-400 p-2 rounded-lg">Pricing</a></li>
+            <li><a href="#" class="hover:bg-gray-400 p-2 rounded-lg">Review</a></li>
+            <li>
+                <div class="inline-block p-0.5 rounded-lg bg-linear-to-r from-blue-500 to-purple-500 hover:scale-110">
+                    <button type="button" class="bg-black text-white px-4 py-2 rounded-lg">
+                        Get Started
+                    </button>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <section class="h-screen relative overflow-hidden flex items-center px-6 lg:pt-15">
+
+        <div
+            class="blob absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-87.5 h-87.5 md:w-137.5 md:h-137.5 bg-linear-to-r from-blue-500 to-purple-500 opacity-20 rounded-full">
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center justify-center w-full relative gap-5 z-10">
+
+            <!-- left -->
+            <div class="w-full lg:w-1/2 text-center lg:text-left">
+
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-gray-500">
+                    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span class="text-white text-sm">New with AI-Powered Features</span>
+                    <button type="button"
+                        class="text-xs px-2 py-1 rounded bg-linear-to-r from-blue-500 to-purple-500 text-white">
+                        New
+                    </button>
+                </div>
+
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold text-white">
+                    Build Products <span class="text-blue-400">Users Love</span>
+                </h1>
+                <p class="mt-4 text-gray-300 max-w-xl mx-auto lg:mx-0">
+                    The all-in-one platform for teams to collaborate,<br>design, and ship amazing products 10X faster.
+                </p>
+
+                <div class="mt-6 flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
+                    <button type="button"
+                        class="bg-linear-to-r from-blue-500 to-purple-500 px-5 py-3 rounded-lg font-medium  transition duration-300 text-white hover:scale-95">
+                        Start Free Trial→
+                    </button>
+
+                    <button type="button"
+                        class="border flex gap-2 justify-center items-center border-white text-white px-5 py-3 rounded hover:bg-gray-400">
+                        <div
+                            class="size-5 bg-gray-400 border-2 border-white rounded-full flex items-center justify-center">
+                            ▸</div>
+                        Watch Demo
+                    </button>
+                </div>
+
+
+                <div class="mt-10 flex flex-col sm:flex-row items-center gap-2">
+
+                    <div class="flex items-center">
+                        <img src="https://www.shutterstock.com/image-photo/happy-confident-head-shot-portrait-260nw-2605199867.jpg"
+                            alt="test-1"
+                            class="size-10 rounded-full -ml-2 border-2 border-black hover:scale-110 transition">
+
+                        <img src="https://img.magnific.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="test-2"
+                            class="size-10 rounded-full -ml-2 border-2 border-black hover:scale-110 transition">
+
+                        <img src="https://img.magnific.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="test-3"
+                            class="size-10 rounded-full -ml-2 border-2 border-black hover:scale-110 transition">
+
+                        <div
+                            class="size-10 rounded-full -ml-2 border-2 border-black bg-linear-to-r from-purple-600 to-blue-600 text-white font-semibold flex items-center justify-center">
+                            +2K
+                        </div>
+                    </div>
+
+                    <div class="text-center sm:text-left">
+                        <div class="text-sm">
+                            ⭐⭐⭐⭐⭐ <span class="text-white font-semibold">4.8/5</span>
+                        </div>
+                        <div class="text-sm text-gray-300">
+                            Trusted by 2,000+ Teams Worldwide
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- right -->
+            <div class="w-full lg:w-1/2 flex justify-center relative">
+
+                <img src="https://i.pinimg.com/736x/2f/db/ac/2fdbac3c62f35c28cb04aa8120b41d18.jpg" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-fit
+               rounded-xl shadow-lg" alt="hero-img">
+
+                <div
+                    class="absolute -top-4 sm:-top-6 right-2 sm:right-4 flex items-center gap-2 bg-white/10 backdrop-blur px-3 sm:px-4 py-2 rounded-xl waveflow">
+                    <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs">
+                        📈</div>
+                    <div>
+                        <p class="text-sm font-medium text-white">+127%</p>
+                        <p class="text-xs text-gray-300">Growth</p>
+                    </div>
+                </div>
+
+                <div
+                    class="absolute -bottom-4 sm:-bottom-6 left-2 sm:left-6 flex items-center gap-2 bg-white/10 backdrop-blur px-3 py-2 rounded-xl wave">
+                    <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs">
+                        ✔
+                    </div>
+
+                    <div>
+                        <p class="text-sm font-medium text-white">
+                            Task completed
+                        </p>
+
+                        <p class="text-xs text-gray-300">
+                            Just now
+                        </p>
+                    </div>
+
+                </div>
+
+                <div
+                    class="absolute bottom-10 sm:bottom-16 right-1 sm:right-4 flex items-center gap-1 bg-white/10 backdrop-blur px-3 py-2 rounded-xl shadow animate-bounce transition duration-75">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 rounded-full -ml-1 bg-blue-500 border border-black"></div>
+                        <div class="w-4 h-4 rounded-full -ml-1 bg-purple-500 border border-black"></div>
+                        <div class="w-4 h-4 rounded-full -ml-1 bg-red-500 border border-black"></div>
+                    </div>
+                    <p class="text-sm font-medium text-white">3 Online</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="bg-black min-h-screen p-6 mt-5">
+
+        <div class="text-center text-white space-y-5">
+            <p class="text-sm text-blue-600 font-semibold">FEATURES</p>
+            <h1 class="text-5xl font-bold">Everything You Need</h1>
+            <p class="text-gray-400">Powerful features designed to supercharge your workflow</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
+
+            <div
+                class="md:col-span-2 md:row-span-2 bg-linear-to-br from-blue-950 to-purple-950 border border-white/20 rounded-3xl overflow-hidden hover:border-white transition shadow-2xl">
+
+                <div class="flex flex-col md:flex-row h-full">
+
+                    <div class="flex-1 p-6 text-center md:text-left space-y-4">
+                        <div
+                            class="w-12 h-12 bg-linear-to-br from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-xl">
+                            🚀</div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-white">AI-Powered Automation</h2>
+                        <p class="text-gray-300 leading-7">
+                            Let AI handle repetitive tasks while you focus on what matters. Smart suggestions,
+                            auto-completions, and intelligent workflows.
+                        </p>
+                        <div class="flex flex-col lg:flex-row gap-4 text-xs text-white">
+                            <button type="button" class="bg-gray-400 rounded-full py-1 px-2">Smart Suggestions</button>
+                            <button type="button" class="bg-gray-400 rounded-full py-1 px-2">Auto-Completion</button>
+                            <button type="button" class="bg-gray-400 rounded-full py-1 px-2">Workflows</button>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 flex items-end justify-end pt-6">
+                        <img src="https://i1-e.pinimg.com/1200x/ce/8e/98/ce8e987845d3d4e2fe0fff4d985409b9.jpg"
+                            alt="AI Image" class="w-full h-full rounded-tl-2xl hover:scale-110 transition duration-300
+                        object-cover">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div
+                class="group bg-transparent border border-white/50 p-6 rounded-3xl hover:border-sky-400 hover:shadow-lg shadow-sky-700 transition duration-300">
+                <div
+                    class="w-12 h-12 bg-sky-950 transition group-hover:bg-sky-700 rounded-xl flex items-center justify-center text-xl">
+                    ⚡</div>
+                <h3 class="text-xl font-bold text-white my-2">Lightning Fast</h3>
+                <p class="text-gray-300 text-xs">Sub-milisecond response times with global edge deployment.</p>
+            </div>
+
+            <div
+                class="group bg-transparent border border-white/50 p-6 rounded-3xl hover:border-green-400 hover:shadow-lg shadow-green-700 transition duration-300">
+                <div
+                    class="w-12 h-12 bg-green-950 transition group-hover:bg-green-700 rounded-xl flex items-center justify-center text-xl">
+                    🔐</div>
+                <h3 class="text-xl font-bold text-white my-2">Bank-Level Security</h3>
+                <p class="text-gray-300 text-xs">268-bit Encryption, SOC2 Compliant, GDPR Ready.</p>
+            </div>
+
+            <div
+                class="group bg-transparent border border-white/50 p-6 rounded-3xl hover:border-purple-400 hover:shadow-lg shadow-purple-700 transition duration-300">
+                <div
+                    class="w-12 h-12 bg-purple-950 transition group-hover:bg-purple-700 rounded-xl flex items-center justify-center text-xl">
+                    📊</div>
+                <h3 class="text-xl font-bold text-white my-2">Aadvanced Analytics</h3>
+                <p class="text-gray-300 text-xs">Real-time dashboards with custome reports and insights.</p>
+            </div>
+
+            <div
+                class="group bg-transparent border border-white/50 p-6 rounded-3xl hover:border-orange-400 hover:shadow-lg shadow-orange-700 transition duration-300">
+                <div
+                    class="w-12 h-12 bg-orange-950 transition group-hover:bg-orange-700 rounded-xl flex items-center justify-center text-xl">
+                    🔁</div>
+                <h3 class="text-xl font-bold text-white my-2">Real-time Sync</h3>
+                <p class="text-gray-300 text-xs">Instant sync across unlimited devices and platforms.</p>
+            </div>
+
+            <div
+                class="group bg-transparent border border-white/50 p-6 rounded-3xl hover:border-pink-400 hover:shadow-lg shadow-pink-700 transition duration-300">
+                <div
+                    class="w-12 h-12 bg-pink-950 transition group-hover:bg-pink-700 rounded-xl flex items-center justify-center text-xl">
+                    🤝</div>
+                <h3 class="text-xl font-bold text-white my-2">Team Collaboration</h3>
+                <p class="text-gray-300 text-xs">Real-time editing, comments, and version history.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="bg-gray-900 min-h-screen px-4 py-12">
+
+        <div class="text-center text-white">
+            <p class="text-sm text-purple-500 font-semibold tracking-wider">TESTIMONIALS</p>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-3">Loved by Thousands</h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
+
+            <div
+                class="bg-gray-800 border border-white/20 p-6 rounded-2xl hover:bg-gray-700 hover:scale-105 transition duration-300 md:mt-10">
+                <div class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</div>
+                <p class="text-gray-300 text-sm mt-4 leading-6">
+                    "FlowApp completely transformed our workflow.
+                    We shipped 3X faster in the first month alone."
+                </p>
+                <div class="flex items-center gap-3 mt-6">
+                    <img src="https://www.shutterstock.com/image-photo/happy-confident-head-shot-portrait-260nw-2605199867.jpg"
+                        alt="profile" class="w-12 h-12 rounded-full object-cover border-2 border-black">
+                    <div>
+                        <h2 class="text-white font-semibold">Mike Chen</h2>
+                        <p class="text-gray-400 text-sm">CEO, DevCorp</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-gray-800 border border-white/20 p-6 lg:mb-5 hover:bg-gray-700 rounded-2xl hover:scale-105 transition duration-300">
+                <div class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</div>
+                <p class="text-gray-300 text-sm mt-4 leading-6">
+                    "The AI features are mind-blowing.
+                    It's like having an extra team member
+                    that never sleeps."
+                </p>
+                <div class="flex items-center gap-3 mt-6">
+                    <img src="https://img.magnific.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?semt=ais_hybrid&w=740&q=80"
+                        alt="profile" class="w-12 h-12 rounded-full object-cover border-2 border-black">
+                    <div>
+                        <h2 class="text-white font-semibold">Sarah Johnson</h2>
+                        <p class="text-gray-400 text-sm">CEO, TechStartup</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-gray-800 border border-white/20 p-6 rounded-2xl hover:bg-gray-700 hover:scale-105 transition duration-300 md:mt-10">
+                <div class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</div>
+                <p class="text-gray-300 text-sm mt-4 leading-6">
+                    "Best investment we've made.
+                    The ROI was visible within the first week of using FlowApp."
+                </p>
+                <div class="flex items-center gap-3 mt-6">
+                    <img src="https://img.magnific.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?semt=ais_hybrid&w=740&q=80"
+                        alt="profile" class="w-12 h-12 rounded-full object-cover border-2 border-black">
+                    <div>
+                        <h2 class="text-white font-semibold">Michael Hussey</h2>
+                        <p class="text-gray-400 text-sm">Founder, DesignHub</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="h-120 flex items-center justify-center bg-linear-to-l from-pink-600 to-blue-600 text-white px-4">
+
+        <div class="text-center max-w-2xl">
+
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
+                Ready to transform <br class="hidden sm:block">
+                your workflow?
+            </h1>
+            <p class="mt-4 text-sm sm:text-base md:text-lg text-gray-200">
+                Join 2,000+ teams already using FlowApp
+                to build better products faster.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                <button type="button" class="bg-white text-black px-6 py-3 rounded-lg 
+                font-semibold hover:scale-105 transition">
+                    Start Free Trial→
+                </button>
+                <button type="button" class="border border-white px-6 py-3 rounded-lg 
+                hover:bg-gray-300 hover:font-semibold transition">
+                    Schedule Demo
+                </button>
+            </div>
+            <p class="mt-4 text-sm sm:text-base md:text-lg text-gray-200">No credit card requiured + 14 day free trail +
+                cancel anytime</p>
+        </div>
+
+    </section>
+
+    <footer class="bg-black text-white border-t">
+        <div class="max-w-7xl mx-auto px-6 py-14">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-linear-to-r from-blue-500 to-purple-500 flex items-center justify-center font-bold">
+                            ⚡
+                        </div>
+                        <h2 class="text-2xl font-bold">FlowApp</h2>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Build better products faster with the all-in-one platform for modern teams.
+                    </p>
+
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-11 h-11 rounded-xl bg-white/10 hover:bg-purple-600 transition flex items-center justify-center">
+                            X
+                        </a>
+                        <a href="#"
+                            class="w-11 h-11 rounded-xl bg-white/10 hover:bg-blue-600 transition flex items-center justify-center">
+                            in
+                        </a>
+                        <a href="#"
+                            class="w-11 h-11 rounded-xl bg-white/10 hover:bg-red-500 transition flex items-center justify-center">
+                            ▶
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-6 lg:flex lg:gap-40 lg:ml-30">
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-5">Product</h3>
+                        <ul class="space-y-3 text-gray-400">
+                            <li><a href="#" class="hover:text-white transition">Features</a></li>
+                            <li><a href="#" class="hover:text-white transition">Pricing</a></li>
+                            <li><a href="#" class="hover:text-white transition">Integrations</a></li>
+                            <li><a href="#" class="hover:text-white transition">Changelog</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-5">Company</h3>
+                        <ul class="space-y-3 text-gray-400">
+                            <li><a href="#" class="hover:text-white transition">About</a></li>
+                            <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                            <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                            <li><a href="#" class="hover:text-white transition">Press</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-5">Legal</h3>
+
+                        <ul class="space-y-3 text-gray-400">
+                            <li><a href="#" class="hover:text-white transition">Privacy</a></li>
+                            <li><a href="#" class="hover:text-white transition">Terms</a></li>
+                            <li><a href="#" class="hover:text-white transition">Security</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between">
+
+                <div class="flex  items-center text-white font-bold">
+                    <div class="h-8 w-8 flex items-center justify-center">
+                        ⚡
+                    </div>
+                    <h1>FlowApp</h1>
+                </div>
+
+                <div class="text-gray-500 text-sm mt-4 md:mt-0">
+                    © 2026 FlowApp. All rights reserved.
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
